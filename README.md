@@ -1,4 +1,4 @@
-## small-business-enterprise-system
+# small-business-enterprise-system
 An online enterprise management system with non-trivial functionalities for a generalized local business. 
 
 The database is for a small business. It keeps track of products and orders made by users. Users can either be customers or the admin/owner of the small business.  
