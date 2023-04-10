@@ -34,7 +34,7 @@ unique: name
 
 
 ## ORDER: 
-**Attributes:**id, order_date, ship_date, cust_id, prod_id, status
+**Attributes:** id, order_date, ship_date, cust_id, prod_id, status
 
 **Constraints:**
 
