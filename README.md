@@ -13,7 +13,6 @@ The database is for a small business. It keeps track of products and orders made
 Attributes: cid, cfirstName, clastName, cusername, cpassword, address, email
 
 Constraints:
-
 primary key: cid
 
 not null: cfirstName, clastName, email, address
@@ -24,7 +23,6 @@ unique: email, username
 Attributes: pid, pname, price, quantity
 
 Constraints:
-
 primary key: pid
 
 not null: pname, price
@@ -36,15 +34,21 @@ unique: name
 
 ## ORDER: 
 Attributes: id, order_date, ship_date, cust_id, prod_id, status
+
 Constraints:
 primary key: oid
+
 foreign key: cust_id, prod_id
+
 not null: cust_id, prod_id, orderDate  
+
 Check: quantity>0
 
 ## ROLE:
 Attributes: roleID, userRole
+
 Constraint:
+
 Primary key: roleID
 Not null: userRole (admin/customer)
 
