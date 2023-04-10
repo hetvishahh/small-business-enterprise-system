@@ -23,6 +23,7 @@ unique: email, username
 Attributes: pid, pname, price, quantity
 
 Constraints:
+
 primary key: pid
 
 not null: pname, price
@@ -36,6 +37,7 @@ unique: name
 Attributes: id, order_date, ship_date, cust_id, prod_id, status
 
 Constraints:
+
 primary key: oid
 
 foreign key: cust_id, prod_id
@@ -47,9 +49,10 @@ Check: quantity>0
 ## ROLE:
 Attributes: roleID, userRole
 
-Constraint:
+Constraints:
 
 Primary key: roleID
+
 Not null: userRole (admin/customer)
 
 ## RELATION: 
