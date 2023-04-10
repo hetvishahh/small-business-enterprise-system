@@ -11,17 +11,26 @@ The database is for a small business. It keeps track of products and orders made
 
 ## USER:
 Attributes: cid, cfirstName, clastName, cusername, cpassword, address, email
+
 Constraints:
+
 primary key: cid
+
 not null: cfirstName, clastName, email, address
+
 unique: email, username
 
 ## PRODUCT: 
 Attributes: pid, pname, price, quantity
+
 Constraints:
+
 primary key: pid
+
 not null: pname, price
+
 check: price > 0, quantity >0
+
 unique: name
 
 
