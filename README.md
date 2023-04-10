@@ -10,9 +10,9 @@ The database is for a small business. It keeps track of products and orders made
 # ENTITY
 
 ## USER:
-Attributes: cid, cfirstName, clastName, cusername, cpassword, address, email
+**Attributes:** cid, cfirstName, clastName, cusername, cpassword, address, email
 
-Constraints:
+**Constraints:**
 primary key: cid
 
 not null: cfirstName, clastName, email, address
@@ -20,9 +20,9 @@ not null: cfirstName, clastName, email, address
 unique: email, username
 
 ## PRODUCT: 
-Attributes: pid, pname, price, quantity
+**Attributes:** pid, pname, price, quantity
 
-Constraints:
+**Constraints:**
 
 primary key: pid
 
@@ -34,9 +34,9 @@ unique: name
 
 
 ## ORDER: 
-Attributes: id, order_date, ship_date, cust_id, prod_id, status
+**Attributes:**id, order_date, ship_date, cust_id, prod_id, status
 
-Constraints:
+**Constraints:**
 
 primary key: oid
 
@@ -47,9 +47,9 @@ not null: cust_id, prod_id, orderDate
 Check: quantity>0
 
 ## ROLE:
-Attributes: roleID, userRole
+**Attributes:** roleID, userRole
 
-Constraints:
+**Constraints:**
 
 Primary key: roleID
 
