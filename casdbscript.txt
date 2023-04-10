@@ -1,0 +1,50 @@
+-- casdb script
+--create the db and schema then run the script
+--CREATE DATABASE casdb;
+--CREATE SCHEMA cass;
+
+CREATE TABLE cass.role(
+role_id integer not null primary key,
+role_name text not null
+);
+
+INSERT INTO cass.role values (1, 'Admin');
+INSERT INTO cass.role values (2. 'Role');
+
+
+CREATE TABLE cass.products(
+product_id integer not null primary key,
+product_name text not null,
+product_price decimal(10,2) not null,
+product_quantity integer not null,
+product_image bytea 
+);
+
+CREATE TABLE cass.order(
+order_id integer not null primary key,
+order_status text not null,
+user_id integer not null,
+order_date timestamp not null,
+ship_date timestamp not null
+);
+
+CREATE TABLE cass.order_details(
+order_details_id integer not null primary key,
+order_id integer not null,
+product_id integer not null,
+order_quantity integer not null
+);
+
+
+CREATE TABLE cass.user(
+user_id integer not null primary key,
+user_roleid integer not null default 2,
+user_name text not null,
+user_password text not null,
+user_firstname text not null,
+user_lastname text not null,
+user_address text not null,
+user_emailid text not null
+);
+
+INSERT INTO cass.user values (1,1,'Admin','Admin','Niharika','Adari','usf,tampa,fl 33637', 'adari1@usf.edu');
