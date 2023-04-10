@@ -41,12 +41,12 @@ Not null: userRole (admin/customer)
 
 RELATION: 
 
-USER- ONE TO MANY -ORDER
+*USER- ONE TO MANY -ORDER
 	-customer can make many orders
-ORDER- MANY TO MANY -PRODUCT
+*ORDER- MANY TO MANY -PRODUCT
 	-order can include many products
 	-product can be in many orders
-USER - MANY TO ONE- ROLE (total participation)
+*USER - MANY TO ONE- ROLE (total participation)
 	-user can only have one role 
 	-role can have many users.
 
